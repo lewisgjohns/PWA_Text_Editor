@@ -21,14 +21,14 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         title: 'Jate',
-        template: './src/index.html',
+        template: './index.html',
         filename: 'index.html',
         chunks: ['main'],
       }),
 
       new InjectManifest({
         swSrc: './src-sw.js',
-        swDest: 'sw.js',
+        swDest: 'src-sw.js',
       }),
 
       new WebpackPwaManifest({
@@ -40,7 +40,7 @@ module.exports = () => {
         start_url: '/',
         icons: [
           {
-            src: path.resolve('src/img/icon.png'),
+            src: path.resolve('src/images/logo.png'),
             sizes: [96, 128, 192, 256, 384, 512],
             destination: path.join('icons'),
           },
