@@ -26,7 +26,7 @@ warmStrategyCache({
 
 registerRoute(({ request }) => request.mode === 'navigate', pageCache);
 
-// TODO: Implement asset caching
+//this is the offline fallback strategy
 registerRoute(
   ({ request }) =>
     request.destination === 'script' ||

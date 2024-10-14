@@ -3,10 +3,7 @@ const WebpackPwaManifest = require('webpack-pwa-manifest');
 const path = require('path');
 const { InjectManifest } = require('workbox-webpack-plugin');
 
-// TODO: Add and configure workbox plugins for a service worker and manifest file.
- 
-// TODO: Add CSS loaders and babel to webpack.
-
+//this is the webpack configuration file
 module.exports = () => {
   return {
     mode: 'development',
@@ -49,6 +46,7 @@ module.exports = () => {
 
     ],
 
+    //this is the configuration for the webpack dev server
     module: {
       rules: [
         {

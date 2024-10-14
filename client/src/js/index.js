@@ -6,6 +6,7 @@ import '../css/style.css';
 const main = document.querySelector('#main');
 main.innerHTML = '';
 
+//this is the spinner to show when the editor is loading
 const loadSpinner = () => {
   const spinner = document.createElement('div');
   spinner.classList.add('spinner');
